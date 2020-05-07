@@ -1,0 +1,144 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ZombieDragon",
+				"abbreviation": "ZomDra",
+				"full": "Zombie Dragon",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1588819138,
+		"dateLastModified": 1588819138
+	},
+	"monster": [
+		{
+			"name": "Zombie Dragon",
+			"size": "L",
+			"type": {
+				"type": "undead",
+				"tags": [
+					{
+						"tag": "dragon",
+						"prefix": "Undead"
+					}
+				]
+			},
+			"source": "ZombieDragon",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Scales"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 96",
+				"average": 184
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 20,
+				"canHover": false
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 23,
+			"int": 8,
+			"wis": 7,
+			"cha": 15,
+			"passive": 14,
+			"cr": "7",
+			"save": {
+				"con": "+9",
+				"cha": "+5",
+				"str": "+7",
+				"dex": "+0",
+				"int": "-1",
+				"wis": "-2"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"vulnerable": [
+				"fire",
+				"radiant"
+			],
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"isNpc": true,
+			"dragonCastingColor": "S",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie dragon to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie dragon drops to 1 hit point instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) damage."
+					]
+				},
+				{
+					"name": "Cold Breath",
+					"entries": [
+						"The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a {@dc 15} Constitution saving throw, taking 45 ( {@damage 12d8 + 2}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"damageTags": [
+				"C"
+			],
+			"tokenUrl": "https://thetrove.net/Assets/By%20Artist%20or%20Source/Caeora/Zombie%20Dragon/Zombie%20Dragon%20Blue%20Shadow.png",
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"shortName": true,
+			"uniqueId": "5eb94a34b4cc6207e262c3fd3e582f0e"
+		}
+	]
+}
